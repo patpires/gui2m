@@ -1,0 +1,675 @@
+<html ><head>
+    <link href="maincss-bce741583d114ee9b912.css" rel="stylesheet">
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <title>Desafio dos Avós Aventureiros - 2 Meses de Gui!</title>
+      <style>
+        body {
+            background-image: url('maldivas.jpg');
+            background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Necessário para o overlay */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1); /* Overlay branco com 70% de opacidade */
+    z-index: -1; /* Coloca o overlay atrás do conteúdo */
+}
+
+.page-header, .clues, .container-columns {
+    color: #000; /* Cor do texto mais escura */
+    text-shadow: 1px 1px 2px white; /* Sombra branca sutil no texto */
+}
+    </style>
+    <script type="text/javascript">
+    (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
+    ;r.type="text/javascript";r.async=true
+    ;r.src="https://cdn.amplitude.com/libs/amplitude-4.4.0-min.gz.js"
+    ;r.onload=function(){if(e.amplitude.runQueuedFunctions){
+    e.amplitude.runQueuedFunctions()}else{
+    console.log("[Amplitude] Error: could not load SDK")}}
+    ;var i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)
+    ;function s(e,t){e.prototype[t]=function(){
+    this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));return this}}
+    var o=function(){this._q=[];return this}
+    ;var a=["add","append","clearAll","prepend","set","setOnce","unset"]
+    ;for(var u=0;u<a.length;u++){s(o,a[u])}n.Identify=o;var c=function(){this._q=[]
+    ;return this}
+    ;var l=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"]
+    ;for(var p=0;p<l.length;p++){s(c,l[p])}n.Revenue=c
+    ;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","logEventWithTimestamp","logEventWithGroups","setSessionId","resetSessionId"]
+    ;function v(e){function t(t){e[t]=function(){
+    e._q.push([t].concat(Array.prototype.slice.call(arguments,0)))}}
+    for(var n=0;n<d.length;n++){t(d[n])}}v(n);n.getInstance=function(e){
+    e=(!e||e.length===0?"$default_instance":e).toLowerCase()
+    ;if(!n._iq.hasOwnProperty(e)){n._iq[e]={_q:[]};v(n._iq[e])}return n._iq[e]}
+    ;e.amplitude=n})(window,document);
+
+    amplitude.getInstance().init("9310c37f0d9d5e472d9b23fa5d265ef7");
+</script>
+ 
+<script src="798-bundle-f2d2082800ac1ba4dd02.js" defer=""></script>
+<script src="424-bundle-46b4ad4394e70094478e.js" defer=""></script>
+<script src="397-bundle-f6c764f14ae4e29cda61.js" defer=""></script>
+<script src="556-bundle-66a6bd5a8d992122ed22.js" defer=""></script>
+<script src="853-bundle-224c9f83935ce582cca5.js" defer=""></script>
+<script src="mainjs-bundle-329867a4714aaa15fb1d.js" defer=""></script>
+
+</head>
+
+<body id="zebra" aria-hidden="false" style="" >
+<div class="page-header">
+        <h1 align="center">Desafio Vovós Aventureiros <br><small>2 Meses de GUI!</small></h1>
+
+        <div class="description">
+		<table align="center" width="60%">
+		<tr>
+			<td align="center" bgcolor="#0ffff8" ><p><small>Os vovós de Guilherme, Ana e Nildo adoram viajar!<br>Estão agora nas Ilhas Maldivas, cercados por encantadoras águas cristalinas e areias brancas, em uma aventura de tirar o fôlego!<br> Compartilham essa experiência com vizinhos de diversas nacionalidades.</small></p>
+            <p><small><small>Quando Einstein criou este tipo de teste de QI, afirmou que 98% da população mundial não era capaz de resolvê-lo.<br>E você, consegue resolvê-lo?</small></small></p>
+</td>
+
+		</tr>
+		</table>
+					 
+        </div>
+
+</div>
+    <div id="game" >
+        <div class="container-columns" >
+            <div class="column">
+                <span>&nbsp;</span>
+                <ul>
+                    
+                    <li><span class="title" >Cor</span></li>
+                    
+                    <li><span class="title">Nacionalidade</span></li>
+                    
+                    <li><span class="title">Bebida</span></li>
+                    
+                    <li><span class="title">Item</span></li>
+                    
+                    <li><span class="title">Pet</span></li>
+                    
+                </ul>
+            </div>
+
+            
+            <div class="column">
+                <span class="title">Cabana #1</span>
+    <span class="title-xs">#1</span>
+    <ul class="house">
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+    <option value="0">Amarela</option>
+    
+    <option value="1">Azul</option>
+    
+    <option value="2">Branca</option>
+    
+    <option value="3">Verde</option>
+    
+    <option value="4">Vermelha</option>
+    
+</select>
+        </li>
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+  <option value="0">Portugueses</option>
+    
+    <option value="1">Japoneses</option>
+    
+    <option value="2">Argentinos</option>
+    
+    <option value="3">Americanos</option>
+    
+    <option value="4">Brasileiros</option>
+    
+</select>
+        </li>
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+     <option value="0">Água</option>
+    
+    <option value="1">Café</option>
+    
+    <option value="2">Chá</option>
+    
+    <option value="3">Cerveja</option>
+    
+    <option value="4">Vinho</option>
+    
+</select>
+        </li>
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+    <option value="0">Mapa Mundi</option>
+    
+    <option value="1">Lanterna</option>
+    
+    <option value="2">Cantil</option>
+    
+    <option value="3">Kit Primeiro Socorro</option>
+    
+    <option value="4">Bússola</option>
+    
+</select>
+        </li>
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+   <option value="0">Cachorros</option>
+    
+    <option value="1">Cavalos</option>
+    
+    <option value="2">Gatos</option>
+    
+    <option value="3">Pássaros</option>
+    
+    <option value="4">Peixes</option>
+	
+</select>
+        </li>
+        
+    </ul>
+            </div>
+            
+            <div class="column">
+                <span class="title">Cabana #2</span>
+    <span class="title-xs">#2</span>
+    <ul class="house">
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+      <option value="0">Amarela</option>
+    
+    <option value="1">Azul</option>
+    
+    <option value="2">Branca</option>
+    
+    <option value="3">Verde</option>
+    
+    <option value="4">Vermelha</option>
+    
+</select>
+        </li>
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+    <option value="0">Portugueses</option>
+    
+    <option value="1">Japoneses</option>
+    
+    <option value="2">Argentinos</option>
+    
+    <option value="3">Americanos</option>
+    
+    <option value="4">Brasileiros</option>
+
+</select>
+        </li>
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+     <option value="0">Água</option>
+    
+    <option value="1">Café</option>
+    
+    <option value="2">Chá</option>
+    
+    <option value="3">Cerveja</option>
+    
+    <option value="4">Vinho</option>
+    
+</select>
+        </li>
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+    <option value="0">Mapa Mundi</option>
+    
+    <option value="1">Lanterna</option>
+    
+    <option value="2">Cantil</option>
+    
+    <option value="3">Kit Primeiro Socorro</option>
+    
+    <option value="4">Bússola</option>>
+    
+</select>
+        </li>
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+   <option value="0">Cachorros</option>
+    
+    <option value="1">Cavalos</option>
+    
+    <option value="2">Gatos</option>
+    
+    <option value="3">Pássaros</option>
+    
+    <option value="4">Peixes</option>
+    
+</select>
+        </li>
+        
+    </ul>
+            </div>
+            
+            <div class="column">
+                <span class="title">Cabana #3</span>
+    <span class="title-xs">#3</span>
+    <ul class="house">
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+      <option value="0">Amarela</option>
+    
+    <option value="1">Azul</option>
+    
+    <option value="2">Branca</option>
+    
+    <option value="3">Verde</option>
+    
+    <option value="4">Vermelha</option>
+    
+</select>
+        </li>
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+   <option value="0">Portugueses</option>
+    
+    <option value="1">Japoneses</option>
+    
+    <option value="2">Argentinos</option>
+    
+    <option value="3">Americanos</option>
+    
+    <option value="4">Brasileiros</option>
+
+    
+</select>
+        </li>
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+    <option value="0">água</option>
+    
+    <option value="1">café</option>
+    
+    <option value="2">chá</option>
+    
+    <option value="3">cerveja</option>
+    
+    <option value="4">Vinho</option>
+    
+</select>
+        </li>
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+     <option value="0">Mapa Mundi</option>
+    
+    <option value="1">Lanterna</option>
+    
+    <option value="2">Cantil</option>
+    
+    <option value="3">Kit Primeiro Socorro</option>
+    
+    <option value="4">Bússola</option>
+    
+</select>
+        </li>
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+  <option value="0">Cachorros</option>
+    
+    <option value="1">Cavalos</option>
+    
+    <option value="2">Gatos</option>
+    
+    <option value="3">Pássaros</option>
+    
+    <option value="4">Peixes</option>
+    
+</select>
+        </li>
+        
+    </ul>
+            </div>
+            
+            <div class="column">
+                <span class="title">Cabana #4</span>
+    <span class="title-xs">#4</span>
+    <ul class="house">
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+    <option value="0">Amarela</option>
+    
+    <option value="1">Azul</option>
+    
+    <option value="2">Branca</option>
+    
+    <option value="3">Verde</option>
+    
+    <option value="4">Vermelha</option>
+    
+</select>
+        </li>
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+   <option value="0">Portugueses</option>
+    
+    <option value="1">Japoneses</option>
+    
+    <option value="2">Argentinos</option>
+    
+    <option value="3">Americanos</option>
+    
+    <option value="4">Brasileiros</option>
+
+    
+</select>
+        </li>
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+   <option value="0">Água</option>
+    
+    <option value="1">Café</option>
+    
+    <option value="2">Chá</option>
+    
+    <option value="3">Cerveja</option>
+    
+    <option value="4">Vinho</option>
+    
+</select>
+        </li>
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+   <option value="0">Mapa Mundi</option>
+    
+    <option value="1">Lanterna</option>
+    
+    <option value="2">Cantil</option>
+    
+    <option value="3">Kit Primeiro Socorro</option>
+    
+    <option value="4">Bússola</option>
+    
+</select>
+        </li>
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+ <option value="0">Cachorros</option>
+    
+    <option value="1">Cavalos</option>
+    
+    <option value="2">Gatos</option>
+    
+    <option value="3">Pássaros</option>
+    
+    <option value="4">Peixes</option>
+    
+</select>
+        </li>
+        
+    </ul>
+            </div>
+            
+            <div class="column">
+                <span class="title">Cabana #5</span>
+    <span class="title-xs">#5</span>
+    <ul class="house">
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+      <option value="0">Amarela</option>
+    
+    <option value="1">Azul</option>
+    
+    <option value="2">Branca</option>
+    
+    <option value="3">Verde</option>
+    
+    <option value="4">Vermelha</option>
+    
+</select>
+        </li>
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+   <option value="0">Portugueses</option>
+    
+    <option value="1">Japoneses</option>
+    
+    <option value="2">Argentinos</option>
+    
+    <option value="3">Americanos</option>
+    
+    <option value="4">Brasileiros</option>
+
+    
+</select>
+        </li>
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+    <option value="0">Água</option>
+    
+    <option value="1">Café</option>
+    
+    <option value="2">Chá</option>
+    
+    <option value="3">Cerveja</option>
+    
+    <option value="4">Vinho</option>
+    
+</select>
+        </li>
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+   <option value="0">Mapa Mundi</option>
+    
+    <option value="1">Lanterna</option>
+    
+    <option value="2">Cantil</option>
+    
+    <option value="3">Kit Primeiro Socorro</option>
+    
+    <option value="4">Bússola</option>
+    
+</select>
+        </li>
+        
+        <li>
+            <select>
+    <option value="-1"></option>
+    
+    <option value="0">Cachorros</option>
+    
+    <option value="1">Cavalos</option>
+    
+    <option value="2">Gatos</option>
+    
+    <option value="3">Pássaros</option>
+    
+    <option value="4">Peixes</option>
+    
+</select>
+        </li>
+        
+    </ul>
+            </div>
+            
+        </div>
+
+        <div class="clues">
+		<table align="center" width="65%">
+		<tr>
+			<td align="center" bgcolor="#fff" >
+			
+			
+			           <ul>
+                
+ <li class="column"><small>Os Avós Argentinos estão hospedados na cabana Vermelha.</small></li>
+<li class="column"><small>Os Avós Brasileiros têm Cachorros como animais de estimação.</small></li>
+<li class="column"><small>Os Avós Japoneses bebem Chá.</small></li>
+<li class="column"><small>A casa Verde fica do lado esquerdo da casa Branca.</small></li>
+<li class="column"><small>Os Avós que estão hospedados na casa Verde bebem Café.</small></li>
+<li class="column"><small>Os Avós que têm como item essencial de viagem o Kit Primeiro Socorro criam Pássaros.</small></li>
+<li class="column"><small>Os Avós que estão hospedados na casa Amarela têm como item essencial  de viagem o Cantil.</small></li>
+<li class="column"><small>Os Avós que estão hospedados na casa do meio bebem Vinho.</small></li>
+<li class="column"><small>Os Avós Americanos estão hospedados na primeira cabana.</small></li>
+<li class="column"><small>Os Avós que têm como item essencial  de viagem  o Mapa Mundi estão hospedados ao lado do que tem Gatos.</small></li>
+<li class="column"><small>Os Avós que criam Cavalos vivem ao lado dos que tem como item essencial o Cantil.</small></li>
+<li class="column"><small>Os Avós que têm como item essencial uma Lanterna, bebem Cerveja.</small></li>
+<li class="column"><small>Os Avós Portugueses têm como item essencial  de viagem  a Bússola.</small></li>
+<li class="column"><small>Os Avós Americanos estão hospedados ao lado da cabana Azul.</small></li>
+	<li class="column"><small>Os Avós que têm como item essencial  de viagem o Mapa Mundi são vizinhos dos que bebem Água.</small></li>
+
+                
+            </ul>
+			
+</td>
+
+		</tr>
+		</table>
+
+ 
+        </div>
+
+        <div class="container-buttons">
+            <button id="btn-undo" class="btn btn-secondary" disabled="disabled"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="svg-icon" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M212.333 224.333H12c-6.627 0-12-5.373-12-12V12C0 5.373 5.373 0 12 0h48c6.627 0 12 5.373 12 12v78.112C117.773 39.279 184.26 7.47 258.175 8.007c136.906.994 246.448 111.623 246.157 248.532C504.041 393.258 393.12 504 256.333 504c-64.089 0-122.496-24.313-166.51-64.215-5.099-4.622-5.334-12.554-.467-17.42l33.967-33.967c4.474-4.474 11.662-4.717 16.401-.525C170.76 415.336 211.58 432 256.333 432c97.268 0 176-78.716 176-176 0-97.267-78.716-176-176-176-58.496 0-110.28 28.476-142.274 72.333h98.274c6.627 0 12 5.373 12 12v48c0 6.627-5.373 12-12 12z"></path></svg></button>
+            <button id="btn-redo" class="btn btn-secondary" disabled="disabled"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="svg-icon" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M500.33 0h-47.41a12 12 0 0 0-12 12.57l4 82.76A247.42 247.42 0 0 0 256 8C119.34 8 7.9 119.53 8 256.19 8.1 393.07 119.1 504 256 504a247.1 247.1 0 0 0 166.18-63.91 12 12 0 0 0 .48-17.43l-34-34a12 12 0 0 0-16.38-.55A176 176 0 1 1 402.1 157.8l-101.53-4.87a12 12 0 0 0-12.57 12v47.41a12 12 0 0 0 12 12h200.33a12 12 0 0 0 12-12V12a12 12 0 0 0-12-12z"></path></svg></button>
+        </div>
+    </div>
+     
+    </div>
+    </div>
+
+<div id="modal-end-game" class="modal fade" tabindex="-1" role="dialog" data-has-template="true">
+        <div class="modal-dialog modal-dialog-end-game ">
+            <div class="modal-content">
+            
+        <div class="modal-body">
+            
+        </div>
+        
+            </div>
+        </div>
+    </div>
+<script type="text/html" id="templateBody-end-game">
+        <div class="top">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <%
+                if (typeof icon === 'undefined' || icon === '' || icon === 'trophy') {
+                    var icon = '/static/images/trophy.svg';
+                } else if (icon === 'star') {
+                    var icon = '/static/images/star.svg';
+                } else if (icon === 'gold-medal') {
+                    var icon = '/static/images/gold-medal.svg';
+                } else if (icon === 'silver-medal') {
+                    var icon = '/static/images/silver-medal.svg';
+                } else if (icon === 'bronze-medal') {
+                    var icon = '/static/images/bronze-medal.svg';
+                }
+            %>
+            
+
+            <h3>Parabéns, você ganhou!</h3>
+            
+    <p>Parabéns, você completou o problema de lógica em <%= time %>.</p>
+
+    
+
+        </div>
+
+        
+        <div class="bottom">
+     
+<script src="newsfeed-bundle-21ca76cd49dda3652a59.js" defer=""></script>
+<script src="486-bundle-e43358f73af2340e690b.js" defer=""></script>
+<script src="755-bundle-59f17770c0df68a7cca9.js" defer=""></script>
+<script src="zebra-bundle-3f359f3bf4b6edd81c3b.js" defer=""></script>
+
+<script>
+    var puzzle = "rlWwo2kipaZvBvOoVzSgLKWyoTRvYPNvLKc1oPVfVPWvpzShL2RvYPNvqzIlMTHvYPNvqzIloJIfnTRvKFjtVaW1oTImVwbtJ1fjYPOoZFjtZvjtZPjtAS1qYPOoZPjtJmRfVQDfVQDfVQOqKFjtJmNfVSfkYPNkYPNlYPNlKI0fVSfkYPOoZPjtZljtZPjtZy1qYPOoZPjtJmNfVQZfVQVfVQSqKFjtJmNfVSfmYPNmYPN0YPNmKI0fVSfjYPOoZPjtZPjtZljtZy1qYPOoZvjtJmVfVQDfVQWqKFjtJmVfVSfkYPNmYPNjKI0fVSfmYPOoZljtZPjtAPjtZy1qYPOoZljtJmDfVQRfVQZfVQWqKFjtJmNfVSfmYPNkYPNlYPNmKI0fVSfjYPOoZFjtZPjtZljtAS1qYPOoZljtJmRfVQZfVQNfVQSqKFjtJmZfVSfmYPNjYPNlYPNjKI1qYPNvp29fqKEco24vBvOoJmNfVQZfVQNfVQVfVQWqYPOoZFjtZFjtZvjtZPjtZI0fVSf0YPNlYPN0YPNmYPNmKFjtJmZfVQNfVQRfVQDfVQEqYPOoZvjtAPjtZljtZFjtZS1qYPNvp2k1MlV6VPW0MKA0MF1xMF1ynJ5mqTIcovVfVPWxnJMznJA1oUE5VwbtZ30=";
+
+    document.addEventListener("DOMContentLoaded", function() {
+
+        loadZebra(puzzle);
+
+    }, false);
+</script>
+
+</html>
