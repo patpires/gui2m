@@ -1,4 +1,13 @@
+let startTime;
+
+// Inicia o temporizador ao carregar a página
+window.onload = function() {
+    startTime = new Date();
+    updateHouseColors();
+};
+
 document.querySelectorAll('select').forEach(select => select.addEventListener('change', validate));
+
 
 const rules = [
     { hint: "Os Avós Argentinos estão hospedados na cabana Vermelha.", check: () => getHouseBy('nationality', 'argentinos').color === 'vermelha' },
@@ -20,6 +29,8 @@ const rules = [
 
 function validate() {
     const clues = document.querySelectorAll('.clue');
+    let allCorrect = true;
+    
     rules.forEach((rule, index) => {
         const clueElement = clues[index];
         if (rule.check()) {
@@ -28,9 +39,15 @@ function validate() {
         } else {
             clueElement.style.textDecoration = 'none';
             clueElement.style.color = 'red';
+            allCorrect = false; // Se qualquer regra falhar, não podemos dizer que está tudo correto.
         }
     });
 
+    if (allCorrect) {
+        showVictory();
+    }
+    
+    // Disable used options in select elements
     ['color', 'nationality', 'drink', 'item', 'pet'].forEach(category => {
         const usedValues = Array.from(document.querySelectorAll(`.${category}`)).map(select => select.value);
         document.querySelectorAll(`.${category}`).forEach(select => {
@@ -41,7 +58,7 @@ function validate() {
             });
         });
     });
-
+    
     // Atualiza a cor de fundo da cabana
     updateHouseColors();
 }
@@ -65,9 +82,6 @@ function updateHouseColors() {
         house.style.backgroundColor = colorMap[colorValue] || 'rgba(255, 255, 255, 0.9)';
     });
 }
-
-// Chama updateHouseColors na inicialização para garantir que as seleções iniciais sejam aplicadas
-updateHouseColors();
 
 function getHouse() {
     return Array.from(document.querySelectorAll('.house')).map(house => {
@@ -100,7 +114,14 @@ function isNextTo(prop1, val1, prop2, val2) {
 }
 
 function showVictory() {
-    document.getElementById('victory-popup').style.display = 'block';
+    const timeTaken = ((new Date() - startTime) / 1000).toFixed(1); // Tempo em segundos
+    const victoryPopup = document.getElementById('victory-popup');
+    victoryPopup.innerHTML = `
+        <h3>Parabéns, você ganhou!</h3>
+        <p>Parabéns, você completou o problema de lógica em ${timeTaken} segundos.</p>
+        <button onclick="closeVictory()">Fechar</button>
+    `;
+    victoryPopup.style.display = 'block';
 }
 
 function closeVictory() {
