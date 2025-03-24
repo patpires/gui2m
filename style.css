@@ -8,7 +8,7 @@ body {
     text-align: center;
     background-position: center;
     padding-top: 50px;
-    margin: 0;
+    margin: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,13 +20,18 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	padding: 5%;
+    max-width: 80vw; /* Responsivo para telas grandes */
+    width: 90%; /* Responsivo para telas pequenas 
+	
     padding: 20px;
-    max-width: 850px;
+    max-width: 850px;*/
 }
 
 #game-board {
     display: flex;
     justify-content: space-around;
+	  flex-wrap: wrap; /* Permite quebrar linha em telas menores */
     margin-bottom: 20px;
 }
 
@@ -36,6 +41,10 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     padding: 10px;
     text-align: left;
+	margin: 10px;
+        flex: 1 1 20%; /* Flex-grow, flex-shrink, flex-basis para responsividade */
+    min-width: 200px; /* Tamanho mínimo para manter a legibilidade */
+    max-width: 300px; /* Limita o tamanho para telas grandes */
 }
 
 .house h2 {
@@ -48,7 +57,9 @@ select {
     display: block;
     margin: 5px 0;
     padding: 5px;
-    width: 150px;
+    /* width: 150px;*/
+	width: 100%; /* Largura responsiva do select */
+    box-sizing: border-box; /* Inclui padding na largura */
 }
 
 #clues {
@@ -60,6 +71,14 @@ select {
     text-shadow: 1px 1px 2px white; /* Sombra branca sutil no texto */
     list-style: none;
     margin: 5px 0;
+	
+	
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+	
 }
 
 #victory-popup {
@@ -72,7 +91,15 @@ select {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 320px;
+    /* width: 320px; */
+	    width: 60%;
+    max-width: 400px;
+	
+	
+	
+	
+	
+	
 }
 
 button {
@@ -83,6 +110,11 @@ button {
     padding: 10px 20px;
     margin-top: 10px;
     border-radius: 5px;
+	
+    border-radius: 5px;
+    width: 100px;
+	
+	
 }
 
 .page-header{
