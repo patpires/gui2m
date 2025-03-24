@@ -11,39 +11,56 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 	  <style>
-        @media print {
-            /* Remove fundos e cabeçalhos do jogo durante impressão */
-            body * {
-                visibility: hidden;
-            }
-            #game-container, #game-container * {
-                visibility: visible;
-            }
-            #game-container {
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 60%;
-                height: auto;
-            }
-            body {
-                background: none;
-                -webkit-print-color-adjust: economy;
-            }
-            .house {
-                background-color: white !important; /* Remove cor de fundo das cabanas */
-            }
-            button, #victory-popup {
-                display: none; /* Mantém botões e popups fora da impressão */
-            }
-        }
+     @media print {
+    body {
+        margin: 0;
+        -webkit-print-color-adjust: economy;
+        font-size: 10px; /* Fonte menor para economia de espaço */
+    }
+    
+    #game-container {
+        max-width: 100%; /* Usa toda a largura da página de impressão */
+        padding: 0; /* Remove qualquer padding desnecessário */
+    }
+    
+    .house {
+        width: 18%; /* Ajuste a largura para encaixar mais elementos em uma linha */
+        margin: 0; /* Remove margens entre cabanas */
+    }
+    
+    #game-board {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #game-container, #game-container * {
+        visibility: visible;
+    }
+    
+    #game-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    button, #victory-popup {
+        display: none; /* Esconde botões e popups */
+    }
+
+    .clue {
+        padding: 2px 0; /* Reduz o padding das dicas */
+    }
+}
     </style>
 </head>
 <body>
     <div id="game-container">
 <div class="page-header">
         <h1 align="center">Desafio Vovós Aventureiros <br><small>2 Meses de GUI!</small></h1>
-	<button onclick="window.print()" style="position: absolute; top: 15px; right: 15px;"><small><small>&#128424; Versão Impressa </small>small></small>small></button>
+	<button onclick="window.print()" style="position: absolute; top: 15px; right: 15px;"><small><small>&#128424; Versão Impressa</small></small></button>
 		<div class="description">Os vovós de Guilherme adoram viajar! Eles estão agora nas Ilhas Maldivas, cercados por encantadoras águas cristalinas e areias brancas, em uma aventura de tirar o fôlego, compartilhando essa experiência com vizinhos de diversas nacionalidades.</small></p>
             <p><small>Quando Einstein criou este tipo de teste de QI, afirmou que 98% da população mundial não era capaz de resolvê-lo.<br>E você, consegue resolvê-lo?</small></p>
 </td>
