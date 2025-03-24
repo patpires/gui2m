@@ -111,3 +111,6 @@ button {
     color: #000; /* Cor do texto mais escura */
     text-shadow: 1px 1px 2px white; /* Sombra branca sutil no texto */
 }
+
+.hidden {
+display: none;}
