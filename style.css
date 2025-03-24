@@ -43,8 +43,8 @@ body {
     text-align: left;
 	margin: 10px;
         flex: 1 1 20%; /* Flex-grow, flex-shrink, flex-basis para responsividade */
-    min-width: 200px; /* Tamanho mínimo para manter a legibilidade */
-    max-width: 300px; /* Limita o tamanho para telas grandes */
+    min-width: 150px; /* Tamanho mínimo para manter a legibilidade */
+    max-width: 200px; /* Limita o tamanho para telas grandes */
 }
 
 .house h2 {
