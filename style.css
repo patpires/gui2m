@@ -78,9 +78,6 @@ select {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-	
-}
-
 #victory-popup {
     background-color: rgba(0, 128, 0, 0.9);
     border-radius: 10px;
@@ -94,12 +91,7 @@ select {
     /* width: 320px; */
 	    width: 60%;
     max-width: 400px;
-	
-	
-	
-	
-	
-	
+		
 }
 
 button {
@@ -113,9 +105,7 @@ button {
 	
     border-radius: 5px;
     width: 100px;
-	
-	
-}
+		}
 
 .page-header{
     color: #000; /* Cor do texto mais escura */
