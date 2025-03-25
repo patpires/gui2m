@@ -11,7 +11,7 @@ document.querySelectorAll('select').forEach(select => select.addEventListener('c
 
 const rules = [
     { hint: "Os Avós Argentinos estão hospedados na cabana Vermelha.", check: () => getHouseBy('nationality', 'argentinos').color === 'vermelha' },
-    { hint: "Os Avós Brasileiros têm Cachorros como animais de estimação.", check: () => getHouseBy('nationality', 'brasileiros').pet === 'cachorros' },
+    { hint: "Os Avós de Gui têm Cachorros como animais de estimação.", check: () => getHouseBy('nationality', 'brasileiros').pet === 'cachorros' },
     { hint: "Os Avós Japoneses bebem Chá.", check: () => getHouseBy('nationality', 'japoneses').drink === 'cha' },
     { hint: "A cabana Verde fica do lado esquerdo da cabana Branca.", check: () => isLeftOf('verde', 'branca') },
     { hint: "Os Avós que estão hospedados na cabana Verde bebem Café.", check: () => getHouseBy('color', 'verde').drink === 'cafe' },
