@@ -44,8 +44,9 @@ body {
     background: rgba(255, 255, 255, 0.9); /* Fundo branco translúcido */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra leve */
     border-radius: 8px; /* Bordas arredondadas */
-    padding: 5px; /* Espaçamento interno */
+    padding: 10px; /* Espaçamento interno */
 }
+
 
 .house h2 {
     font-size: 1.1em;
